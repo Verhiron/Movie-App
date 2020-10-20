@@ -1,0 +1,32 @@
+  
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/redmond/jquery-ui.css">
+        <script src="Scripts/movieSearch.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="assets/style.css">
+        <link rel="icon" type="image/gif" href="https://cdn.pixabay.com/photo/2014/04/03/11/07/clapperboard-311792_960_720.png">
+    </head>
+  <body>
+
+    <header>
+      <form method="POST" name="movieSearchBar" id="movieSearchBar">
+      <a href="index.html" class="homeBtn" >Home</a>
+      <input id="searchMovie2" class="searchMovie" name="searchMovie" type="text" placeholder="Search Movie"/>
+      </form>
+      </header>
+
+      <div class="movie_container">
+        <div id="movie" class="indiv_movie"></div>
+      </div>
+
+  
+  <script>
+    getMovie();
+  </script>
+  </body>
+</html>

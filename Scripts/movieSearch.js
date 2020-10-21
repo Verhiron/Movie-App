@@ -38,10 +38,14 @@ $(document).ready(function() {
 
     function getMovies(title){
         const movieURL = "https://www.omdbapi.com/?apikey=60ec64a7&s=" + title;
-
+        
         $.ajax(movieURL).then(function(data){
-            var output = "";
-            let movies = data.Search;
+            var error = data.Response;
+            if (error == 'False'){
+                $("#list").html(data.Error);
+            } else {
+                var output = "";
+                let movies = data.Search;
             $.each(movies, (index, movie) => {
                 var poster = (movie.Poster == 'N/A') ? 'assets/images/noImg.png' : movie.Poster; 
                 output += `
@@ -51,10 +55,10 @@ $(document).ready(function() {
                 </div>
                 `;
               });
-        
             $("#list").html(output);
-          
+            }
         });
+      
         
     }
     

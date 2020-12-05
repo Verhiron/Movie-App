@@ -1,7 +1,7 @@
 # Movie-App
 
 #### This is a Movie App that allows users to search for movies and view the information associated with them.
-#### This project is made solely with HTML5, CSS3 and jQuery 
+#### This project is made solely with HTML5, CSS3 (Bootstrap 4) and jQuery 
 
 ### What the project includes:
 

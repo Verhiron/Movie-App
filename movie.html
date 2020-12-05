@@ -1,31 +1,38 @@
-  
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/redmond/jquery-ui.css">
-        <script src="Scripts/movieSearch.js"></script>
-        <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="assets/style.css">
-        <link rel="icon" type="image/gif" href="https://cdn.pixabay.com/photo/2014/04/03/11/07/clapperboard-311792_960_720.png">
-    </head>
-  <body>
-
-      <header>
-      <form method="POST" name="movieSearchBar" id="movieSearchBar">
-      <a href="#" class="homeBtn" onclick="history.back()">Back</a>
-      </form>
-      </header>
-
-      <div class="movie_container">
-        <div id="movie" class="indiv_movie"></div>
-      </div>
-
-  
-  <script>
-    getMovie();
-  </script>
-  </body>
+<head>
+	<meta charset="UTF-8">
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<link href="https://fonts.googleapis.com/css2?family=Overpass:wght@700&display=swap" rel="stylesheet">
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/style.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+	</script>
+	<script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js">
+	</script>
+	<link href="https://cdn.pixabay.com/photo/2014/04/03/11/07/clapperboard-311792_960_720.png" rel="icon" type="image/gif">
+	<script src="Scripts/movieSearch.js">
+	</script>
+	<title></title>
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-expand-xl navbar-light fixed-top">
+			<form class="form-inline flex-row flex-nowrap mt-3" id="movieSearchBar" name="movieSearchBar">
+				<div class="input-group mb-4">
+					<div class="input-group-prepend">
+						<button class="btn searchIcon" id="button-addon6" onclick="history.back()"><i class="fas fa-arrow-left"></i></button>
+					</div>
+				</div>
+			</form>
+		</nav>
+	</header>
+	<div class="container">
+		<div class="row d-flex justify-content-center" id="movie"></div>
+	</div>
+	<script>
+	   getMovie();
+	</script>
+</body>
 </html>
